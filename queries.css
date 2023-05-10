@@ -1,0 +1,533 @@
+/* **************************** */
+/* BELOW 1216px (Landscape Tablets) */
+/* **************************** */
+@media (max-width: 79rem) {
+  .container {
+    padding: 0 5rem;
+  }
+
+  .welcome-img-box {
+    align-self: center;
+  }
+
+  .about-img {
+    width: 90%;
+  }
+
+  .service-header {
+    gap: 0;
+  }
+
+  .project-gardens {
+    margin-left: 4.2rem;
+  }
+
+  .grid-3-columns {
+    gap: 4.7rem;
+  }
+
+  .project-desc {
+    padding: 0 1.2rem;
+    text-align: center;
+  }
+
+  .contacts-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-image {
+    margin-right: 0;
+    order: 3;
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
+
+/* **************************** */
+/* BELOW 992px (Tablets) */
+/* **************************** */
+@media (max-width: 62rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-active:link,
+  .nav-active:visited,
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 3.5rem;
+  }
+
+  .contacts-img {
+    width: 75%;
+  }
+}
+
+/* **************************** */
+/* BELOW 768px (Smaller tablets) */
+/* **************************** */
+@media (max-width: 48rem) {
+  /* html {
+    font-size: 62.5%;
+  } */
+
+  .header {
+    padding: 3rem 0px;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[src="img/menu-close.svg"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[src="img/menu-open.svg"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  /* .nav-active:link,
+  .nav-active:visited,
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2rem;
+  } */
+
+  .welcome {
+    padding: 5.5rem 0 7rem;
+  }
+
+  .grid-welcome {
+    grid-template-columns: 55fr 45fr;
+    column-gap: 4.2rem;
+  }
+
+  .welcome-img-box {
+    grid-column: 2 / 3;
+    align-self: baseline;
+  }
+
+  /* .big-leafs {
+    width: 94%;
+  } */
+
+  .welcome-text-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0;
+  }
+
+  .welcone-title {
+    font-size: 3.5rem;
+    margin-bottom: 3.1rem;
+  }
+
+  .welcome-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 3.5rem;
+  }
+
+  .about {
+    margin-top: 3.7rem;
+    margin-bottom: 9.3rem;
+  }
+
+  .grid-about {
+    grid-template-columns: 1fr;
+    gap: 6.3rem;
+  }
+
+  .about-header {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .about-text {
+    margin-top: 4.7rem;
+  }
+
+  .about-img-box {
+    /* position: static; */
+    text-align: center;
+  }
+
+  .about-img {
+    position: static;
+    width: 38%;
+    height: 100%;
+    justify-self: stretch;
+    transform: none;
+  }
+
+  .service {
+    padding: 5.9rem 0 7.1rem 0;
+  }
+
+  .service-header {
+    display: block;
+    margin-bottom: 3.9rem;
+  }
+
+  .subheading {
+    font-size: 3.5rem;
+    line-height: 1.4;
+  }
+
+  .service-projects {
+    margin-top: 3.7rem;
+  }
+
+  .project-gardens {
+    margin-left: 0;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.2rem;
+    row-gap: 4.2rem;
+  }
+
+  /* .project-desc {
+    padding: 0 1.2rem;
+    text-align: center;
+  } */
+
+  .project-box {
+    padding: 0.6rem 0 1.4rem 0;
+    gap: 1rem;
+  }
+
+  .prices {
+    padding: 4.5rem 0 7.4rem;
+  }
+
+  .prices-title {
+    font-size: 3.5rem;
+    margin-left: 1.4rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .grid-prices {
+    align-items: stretch;
+    gap: 5rem;
+  }
+
+  .contact-header {
+    font-size: 2.5rem;
+    margin: 10rem 0 2.7rem 0;
+    line-height: 1.4;
+  }
+
+  .contacts {
+    padding-top: 3.8rem;
+  }
+
+  .contacts-box {
+    gap: 0;
+  }
+
+  .contacts-image {
+    order: 3;
+    margin: 25rem 0 0 2rem;
+  }
+
+  .contacts-img {
+    height: 25rem;
+    width: 20rem;
+  }
+
+  .subheading-contacts {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  /* .contact-city {
+    padding: 0 2rem;
+  } */
+
+  .price-btn {
+    margin-right: 1.5rem;
+  }
+
+  footer {
+    padding: 3rem 0 3rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+}
+
+/* **************************** */
+/* BELOW 560px (Phones) */
+/* **************************** */
+@media (max-width: 35rem) {
+  .grid-welcome {
+    column-gap: 3.2rem;
+  }
+
+  .welcone-title {
+    line-height: 4rem;
+  }
+
+  .service-projects {
+    gap: 1.9rem;
+  }
+
+  .grid-prices {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .contact {
+    text-align: left;
+  }
+}
+
+/* **************************** */
+/* BELOW 480px (Phones) */
+/* **************************** */
+@media (max-width: 30rem) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    padding: 0 2.3rem;
+  }
+
+  .header {
+    padding: 2.6rem 0px;
+  }
+
+  .welcome {
+    padding: 2.7rem 0 2rem;
+  }
+
+  .grid-welcome {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-img-box {
+    display: none;
+  }
+
+  .welcone-title {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-text {
+    margin-bottom: 2.5rem;
+  }
+  .welcome-btn {
+    font-size: 1rem;
+    padding: 1rem 1.6rem;
+  }
+
+  .subheading {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    margin: 3rem 0;
+  }
+
+  .grid-about {
+    gap: 0;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.7;
+  }
+
+  .about-img {
+    width: 44%;
+  }
+
+  .service {
+    padding: 2.3rem 0 2.1rem 0;
+  }
+
+  .service-projects {
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .project-header {
+    font-size: 1.5rem;
+    padding: 0.7rem 3.2rem;
+  }
+
+  .project-lawn {
+    padding: 0.7rem 4.1rem;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    padding: 0 2.7rem;
+    row-gap: 3.1rem;
+  }
+
+  .project-box {
+    padding: 0.9rem 0 1.8rem 0;
+  }
+
+  /* .grid-prices {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  } */
+
+  .prices {
+    padding: 2.8rem 0 4.1rem;
+  }
+
+  .grid-prices {
+    gap: 1.5rem;
+  }
+
+  /* .price {
+    text-align: center;
+  } */
+
+  .prices-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  .accordian {
+    margin: 0 auto;
+    width: 22.5rem;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .item-price {
+    width: 18.3rem;
+    padding: 1.4rem 3.5rem;
+  }
+
+  .price-text {
+    font-size: 1.5rem;
+  }
+
+  .price-button {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact-header {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    padding: 0 3rem;
+  }
+
+  .contact-btn {
+    font-size: 1.5rem;
+    padding: 0.7rem 2.4rem;
+  }
+
+  .small-leafs {
+    display: none;
+  }
+
+  .contacts {
+    padding-top: 2.4rem;
+  }
+
+  .contacts-image {
+    width: 10rem;
+    margin: 13rem 0 0 0rem;
+  }
+
+  .contacts-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact-city {
+    width: 30rem;
+    margin-top: 8rem;
+  }
+
+  .price-btn {
+    margin: 0;
+  }
+
+  footer {
+    padding: 2.1rem 0 1rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 320px (Phones) */
+/* **************************** */
+@media (max-width: 20rem) {
+  .grid-welcome {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-city {
+    width: 28rem;
+  }
+}
